@@ -14,7 +14,7 @@ var Tesseract = require('tesseract.js'),
 router.get('/', function (req, res, next) {
   //res.render('index', { title: 'Express' });
   //res.sendFile(image);
-  var search = "cosmic";
+  var search = req.query.search;
 
   var _image = new Image(image);
   //var img = PImage.decodePNG(imagestream);
@@ -27,7 +27,7 @@ router.get('/', function (req, res, next) {
 
           var word = data.words[i];
 
-          if(word.text && word.text.toLowerCase().indexOf(search) == -1) continue;
+          if(search && word.text && word.text.toLowerCase().indexOf(search) == -1) continue;
 
           //if(word.text && word.text.search("/"+search+"/i"))
 
