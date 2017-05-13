@@ -10,11 +10,16 @@
     "cookie-parser": "~1.4.3",
     "debug": "~2.6.3",
     "express": "~4.15.2",
+    "express-fileupload": "^0.1.2",
+    "express-session": "^1.15.2",
+    "isomorphic-fetch": "2.2.1",
     "jade": "~1.11.0",
     "morgan": "~1.8.1",
+    "passport": "^0.3.2",
+    "passport-google-oauth": "^1.0.0",
+    "passport-http-bearer": "^1.0.1",
+    "pureimage": "0.0.18",
     "serve-favicon": "~2.4.2",
-    "tesseract.js": "1.0.10",
-    "isomorphic-fetch": "2.2.1",
-    "pureimage": "0.0.18"
+    "tesseract.js": "1.0.10"
   }
 }
